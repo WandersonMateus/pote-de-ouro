@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1919613208789395"
+    crossorigin="anonymous"></script>
+    <title>Escolha seu Bolo de Pote</title>
+</head>
+<body>
+    <h1 class="title">Bolo de Pote</h1>
+    <div class="esc">
+        <h2 class="sub">Escolha o seu sabor favorito!</h2>
+    </div>
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="container">
+        <div id="card1" class="card" onclick="selectOption1()">
+            <div class="info1rCard1">
+                <h2>Abacaxi</h2>
+                <p>Delicioso bolo de pote</p>
+                <p><strong>R$ 8,00</strong></p>
+            </div>
+            <div class="info2rCard2">
+                <img src="abacaxi.png"class="imgCard1" width="125">
+            </div>
+        </div>
+        <div id="card2" class="card" onclick="selectOption2()">
+            <div class="info1rCard1">
+                <h2>Beijinho</h2>
+                <p>Irresistível bolo de pote</p>
+                <p><strong>R$ 8,00</strong></p>
+            </div>
+            <div class="info2rCard2">
+                <img src="beijinho.png"class="imgCard2" width="90">
+            </div>
+        </div>
+            <div id="card3" class="card" onclick="selectOption3()">
+                <div class="info1rCard1">
+                <h2>Maracujá</h2>
+                <p>Gosto em camadas</p>
+                <p><strong>R$ 8,00</strong></p>
+            </div>
+            <div class="info2rCard2">
+                <img src="maracuja.png"class="imgCard3" width="100">
+            </div>
+        </div>
+            <div id="card4" class="card" onclick="selectOption4()">
+                <div class="info1rCard1">
+                <h2>Brigadeiro</h2>
+                <p>O melhor bolo de pote</p>
+                <p><strong>R$ 8,00</strong></p>
+            </div>
+            <div class="info2rCard2">
+                <img src="brigadeiro.png"class="imgCard4" width="80">
+            </div>
+        </div>
+    </div>
+    <div class="btn">
+        <div class="op" id="opid1" onclick="escolhertVendedor1()">
+            <span>De Abacaxi né? Ótima escolha!</span>
+        </div>
+        <div class="op" id="opid2" onclick="escolhertVendedor2()">
+            <span>Beijinho? Perfeito!</span>
+        </div>
+        <div class="op" id="opid3" onclick="escolhertVendedor3()">
+            <span>De Maracujá, excelente escolha!</span>
+        </div>
+        <div class="op" id="opid4" onclick="escolhertVendedor4()">
+            <span>Uhau! De Brigadeiro é ótimo!</span>
+        </div>
+    </div>
+    <div class="feedback">
+        <div class="boxFeed">
+            <h3>Gostou do bolo? Deixe seu Feedback!</h3>
+            <form name="contact" method="POST" data-netlify="true">
+                <label for="nome"><span>Nome</span></label>
+                <input id="nome" type="text">
+                
+                <label for="msg">O que achou?</label>
+                <textarea id="mensagem" rows="9" placeholder="Digite sua menssagem aqui..."></textarea>
+                <br>
+                <input type="submit">
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
